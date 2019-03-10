@@ -58,12 +58,14 @@
         max-width: 100%;
     }
     
+    
     p.item-title{
         display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden;
     }
+    
     
     .item .buttons form {
       display: inline-block;
@@ -73,15 +75,21 @@
     .user-profile .name {
       margin-bottom: 20px;
     }
+    
+    
     .user-profile .name h1 {
       text-shadow: 1px 1px 1px #fff;
       font-weight: bold;
     }
+    
+    
     .user-profile .status ul {
       margin: 0 auto 10px;
       padding: 0;
       display: table;
     }
+    
+    
     .user-profile .status ul li {
       width: 120px;
       padding: 5px 0;
