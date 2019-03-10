@@ -1,15 +1,23 @@
-<% if items %>
+<% if items.present? %>
 <div class="row">
     <% items.each do |item| %>
-    <div class="row">
+    <div class="item">
         <div class="col-md-3 col-sm-4 col-xs-12">
             <div class="panel pane-default">
-                
                 <div class="panel-heading text-center">
                     <img src="<%= item.image_url %>" alt="">
                 </div>
                 <div class="panel panel-body">
+                    < if item.persisted? %>
+                    <p class="item-title"><%= link_to item.title, title %></p>
+                    <% else %>
                     <p class="item_title"><%= item.name %></p>
+                    <% end %>
+                <div class="buttons text-center">
+                    <% if logged_in? %>
+                        <%= render 'ownerships/want_button', item: item %>
+                    <% end %>
+                </div>
                 </div>
             </div>
         </div>
