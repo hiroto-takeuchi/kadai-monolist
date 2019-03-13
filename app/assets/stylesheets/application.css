@@ -7,10 +7,11 @@
         margin-top: 40px;
     }
     
-    .navber{
+    .navbar{
         background-color: #fff;
     }
-    .navber-header img{
+    
+    .navbar-header img{
         margin-top: 5px;
         height: 40px;
     }
